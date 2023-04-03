@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.MainActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="#C8FBEC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_joke"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"
+                    android:gravity="center"
+                    android:textSize="40dp"
+                    android:textColor="@color/black"
+                    />
+
+                <ImageView
+                    android:id="@+id/beforefav"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_joke"
+                    android:src="@drawable/baseline_favorite"
+                    android:layout_marginStart="300dp"/>
+                <ImageView
+                    android:id="@+id/fav"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/favorite"
+                    android:layout_below="@id/tv_joke"
+                    android:layout_marginStart="300dp"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/share"
+                    android:layout_marginStart="300dp"
+                    android:layout_below="@id/beforefav"
+                    />
+                <ImageView
+                    android:id="@+id/list"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/list"
+                    android:layout_marginStart="300dp"
+                    android:layout_below="@id/share"
+                    />
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:text="fav"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="75dp"
+                    android:layout_marginStart="315dp"
+                    android:layout_below="@id/share"
+                    />
+                <TextView
+                    android:id="@+id/tv_ans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to Laugh"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:textSize="40dp"
+                    android:layout_below="@id/list"/>
+
+
+            </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>
